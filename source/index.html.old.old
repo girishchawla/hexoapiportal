@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login form</title>
+</head>
+<body>
+  <div >
+  	<h1>Welcome to the API Developer Portal</h1>
+ 
+      <label for="username">Username:</label>
+      <input type="text" id="username" /><br/>
+      <label for="password">Password:</label>
+      <input type="password" id="password" /><br />
+      <button onclick="myFunction()" >Login</button>
+      <a href="/register.html" >sign up</a>
+
+  </div>
+<script>
+function myFunction() {
+    
+    window.location="http://ec2-34-201-123-29.compute-1.amazonaws.com:11000/starter.html";
+}
+</script>  
+
+</body>
+</html>
