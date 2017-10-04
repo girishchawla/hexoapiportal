@@ -20,6 +20,8 @@ Use widdershins to generate Markdown files with the following command. ( File pa
 
 node widdershins  -e ./widdershins/whiteboard_env.json $FILE_PATH_TO_API_SPEC/swagger.json -o $FILE_PATH_TO_PORTAL/source/amadeus/index.md
 
+Widdershins can be found at https://github.com/Mermade/widdershins
+
 The Login/Registration Pages at http://hostname:11000 are just pass through
 
 The Support Page does not have a database behind the form.
