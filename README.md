@@ -1,9 +1,10 @@
 # hexoapiportal
 
-Install Widdershins
-
-https://github.com/Mermade/widdershins
-
+This is a high level prototype for a Hexo powered API Developer portal.
+Many teams do not need an API Management Layer. They just need an API Documentation
+portal with 1) Authentication/Authorization/Sign-up 2) API Token generation/expiry 3) A support page
+This is an attempt to show the building blocks. The Back-end implementation in terms of database
+persitence for the above forms has been left to the user to implement.
 
 # Install hexo cli
 
@@ -16,6 +17,10 @@ npm install
 hexo server  ( The Webserver will start at http://hostname:11000)
 
 # Use widdershins or any other utility to generate Markdown file from OpenAPI 2.0 or 3.0 specs
+
+Install Widdershins
+
+https://github.com/Mermade/widdershins
 
 Use widdershins to generate Markdown files with the following command. ( File paths are examples)
 
