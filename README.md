@@ -30,9 +30,11 @@ Widdershins can be found at https://github.com/Mermade/widdershins
 
 # Other details
 
-The Login/Registration Pages at http://hostname:11000 are just pass through
+The Login/Registration, Support and API Token Management Pages  are just pass through and
+do not have a database behind them
 
-The Support Page does not have a database behind the form.
-
-The API Token generator page also does not have a database behind it.
+The login page is accessible from http://hostname:11000
+Users can change the themes and layouts of the pages and documentation by learning more
+about the hexo framework at hexo.io. Some youtube videos can be found at
+https://www.youtube.com/watch?v=Kt7u5kr_P5o&list=PLLAZ4kZ9dFpOMJR6D25ishrSedvsguVSm
 
