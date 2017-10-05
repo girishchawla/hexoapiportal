@@ -3,7 +3,7 @@
 This is a high level prototype for a Hexo powered API Developer portal.
 Many teams do not need an API Management Layer. They just need an API Documentation
 portal with 1) Authentication/Authorization/Sign-up 2) API Token generation/expiry 3) A support page
-This is an attempt to show the building blocks. The Back-end implementation in terms of database
+This is an attempt to show the building blocks. The Back-end implementation in terms of API calls or database
 persitence for the above forms has been left to the user to implement.
 
 # Install hexo cli
@@ -31,7 +31,7 @@ Widdershins can be found at https://github.com/Mermade/widdershins
 # Other details
 
 The Login/Registration, Support and API Token Management Pages  are just pass through and
-do not have a database behind them
+do not have an API or database behind them
 
 The login page is accessible from http://hostname:11000
 Users can change the themes and layouts of the pages and documentation by learning more
