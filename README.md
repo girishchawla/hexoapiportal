@@ -46,12 +46,12 @@ $ npm install --save hexo-deployer-s3
 This requires a new config stanza for _config.yml:
 _config.yml
 
-deploy:
-  type: s3
-  bucket: <bucket>
-  aws_key: <key>
-  aws_secret: <secret>
-  region: <region>
+deploy:  
+  type: s3  
+  bucket: <bucket>  
+  aws_key: <key>  
+  aws_secret: <secret>  
+  region: <region>  
   
 $hexo deploy   ( This will work once you have a valid S3 bucket and have filled in the details in the above area of _config.yml
 
