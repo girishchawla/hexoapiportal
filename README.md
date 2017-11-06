@@ -67,10 +67,10 @@ Also add the following to the Bucket policy
                 "s3:GetObject"
             ],
             "Resource": [
-                "arn:aws:s3:::<bucket>/*"
+                "arn:aws:s3:::<<bucket>>/*"
             ]
         }
     ]
 }
 
-Once you have done the above, your website will be available at http://<bucket>.s3-website-<region>.amazonaws.com
+Once you have done the above, your website will be available at http://<<bucket>>.s3-website-<region>.amazonaws.com
