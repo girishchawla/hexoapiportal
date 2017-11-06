@@ -38,3 +38,37 @@ Users can change the themes and layouts of the pages and documentation by learni
 about the hexo framework at hexo.io. Some youtube videos can be found at
 https://www.youtube.com/watch?v=Kt7u5kr_P5o&list=PLLAZ4kZ9dFpOMJR6D25ishrSedvsguVSm
 
+# Deployment to S3
+
+
+$ npm install --save hexo-deployer-s3
+
+This requires a new config stanza for _config.yml:
+_config.yml
+
+deploy:
+  type: s3
+  bucket: <bucket>
+  aws_key: <key>
+  aws_secret: <secret>
+  region: <region>
+  
+$hexo deploy   ( This will work once you have a valid S3 bucket and have filled in the details in the above area of _config.yml
+
+Also add the following to the Bucket policy
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicReadGetObject",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": [
+                "s3:GetObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::<bucket>/*"
+            ]
+        }
+    ]
+}
