@@ -72,3 +72,5 @@ Also add the following to the Bucket policy
         }
     ]
 }
+
+Once you have done the above, your website will be available at http://<bucket>.s3-website-<region>.amazonaws.com
