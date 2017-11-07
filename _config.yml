@@ -79,8 +79,8 @@ theme: newwhiteboard
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
    type: s3
-   bucket: myapidevportal
-   aws_key: AKIAI7D4X7TXA6IG235A
-   aws_secret: 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 
-   region: us-east-1
+   bucket: 
+   aws_key: 
+   aws_secret: 
+   region: 
 
