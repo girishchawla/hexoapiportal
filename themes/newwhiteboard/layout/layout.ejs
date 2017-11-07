@@ -4,11 +4,14 @@
 <html>
 <body>
 
-This is layout.ejs
 <BR>
-<%- body%>
+<% if (page.path.indexOf('index') > -1 || page.path.indexOf('support') > -1|| page.path.indexOf('tokengenerator') > -1 || page.path.indexOf('register') > -1) { %>
+<%- partial('page') %>
+<% } else { %>
+<%- partial('index') %>
+<% } %>
+
 <BR>
-This is layout.ejs
 
 </body>
 </html>

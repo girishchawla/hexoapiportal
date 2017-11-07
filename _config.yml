@@ -82,5 +82,5 @@ deploy:
    bucket: 
    aws_key: 
    aws_secret: 
-   region: 
+   region:us-east-1 
 
