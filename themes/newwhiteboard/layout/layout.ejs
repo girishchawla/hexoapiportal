@@ -1,17 +1,6 @@
-<head>
-</head>
 
-<html>
-<body>
-
-<BR>
 <% if (page.path.indexOf('index') > -1 || page.path.indexOf('support') > -1|| page.path.indexOf('tokengenerator') > -1 || page.path.indexOf('register') > -1) { %>
-<%- partial('page') %>
-<% } else { %>
 <%- partial('index') %>
+<% } else { %>
+<%- partial('page', {} ,{cache: true})  %>
 <% } %>
-
-<BR>
-
-</body>
-</html>
