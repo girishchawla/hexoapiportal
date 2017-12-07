@@ -1,6 +1,6 @@
 
 <% if (page.path.indexOf('index') > -1 || page.path.indexOf('support') > -1|| page.path.indexOf('tokengenerator') > -1 || page.path.indexOf('register') > -1) { %>
-<%- partial('index') %>
+<%- partial('page') %>
 <% } else { %>
-<%- partial('page', {} ,{cache: true})  %>
+<%- partial('index')  %>
 <% } %>
