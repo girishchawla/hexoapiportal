@@ -1,6 +1,11 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
 version: v1.7.1
-ignore: {}
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  'npm:mime:20170907':
+    - hexo-deployer-s3 > s3 > mime:
+        reason: None given
+        expires: '2018-01-25T16:48:14.487Z'
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:marked:20170907':
@@ -8,4 +13,18 @@ patch:
         patched: '2017-12-06T15:35:00.409Z'
   'npm:uglify-js:20151024':
     - hexo > swig > uglify-js:
-        patched: '2017-12-06T15:35:00.409Z'
+        patched: '2017-12-26T16:46:25.750Z'
+  'npm:debug:20170905':
+    - hexo > hexo-cli > hexo-fs > chokidar > fsevents > node-pre-gyp > tar-pack > debug:
+        patched: '2017-12-26T16:46:25.750Z'
+    - hexo > hexo-fs > chokidar > fsevents > node-pre-gyp > tar-pack > debug:
+        patched: '2017-12-26T16:46:25.750Z'
+    - hexo > nunjucks > chokidar > fsevents > node-pre-gyp > tar-pack > debug:
+        patched: '2017-12-26T16:46:25.750Z'
+  'npm:tough-cookie:20170905':
+    - hexo > hexo-cli > hexo-fs > chokidar > fsevents > node-pre-gyp > request > tough-cookie:
+        patched: '2017-12-26T16:46:25.750Z'
+    - hexo > hexo-fs > chokidar > fsevents > node-pre-gyp > request > tough-cookie:
+        patched: '2017-12-26T16:46:25.750Z'
+    - hexo > nunjucks > chokidar > fsevents > node-pre-gyp > request > tough-cookie:
+        patched: '2017-12-26T16:46:25.750Z'
